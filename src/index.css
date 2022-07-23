@@ -41,11 +41,12 @@ body{
     color: #000;
 }
 #header .brand-name{
-    color: #3498db;
+    color: #865B33;
 }
 #header h2{
     color: #484848;
     font-size: 24px;
+    line-height: 33px;
 }
 #header .btn-see-menu{
     font-size: 16px;
@@ -55,12 +56,12 @@ body{
     padding: 10px 30px;
     border-radius: 50px;
     transition: 0.5s ease-in-out;
-    color: #3498db;
-    border: 2px solid #3498db;
+    color: #865B33;
+    border: 2px solid #865B33;
     text-decoration: none;
 }
 #header .btn-see-menu:hover{
-    background-color: #3498db;
+    background-color: #865B33;
     color: #fff;
 }
 .header-img{

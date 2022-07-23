@@ -1,6 +1,6 @@
 import React from 'react';
 import { Outlet, Link, NavLink } from "react-router-dom";
-import logo from "../logo.jpg";
+import logo from "../images/logo.jpg";
 
 export default function NavBar() {
   return (
