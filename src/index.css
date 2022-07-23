@@ -2,6 +2,8 @@
 *{
     font-family: 'Mulish', sans-serif;
 }
+
+/* NavBar.jsx CSS */
 .navbar{
     background: #fff !important;
 }
@@ -29,4 +31,43 @@
     .active{
         border-bottom: none !important;
     }
+}
+
+/* Home page CSS */
+#header{
+    width: 100%;
+    height: 80vh;
+    margin-top: 70px;
+}
+#header h1{
+    margin: 0 0 10px 0;
+    font-size: 48px;
+    font-weight: 700;
+    color: #000;
+}
+#header .brand-name{
+    color: #3498db;
+}
+#header h2{
+    color: #484848;
+    font-size: 24px;
+}
+#header .btn-see-menu{
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 50px;
+    transition: 0.5s ease-in-out;
+    color: #3498db;
+    border: 2px solid #3498db;
+    text-decoration: none;
+}
+#header .btn-see-menu:hover{
+    background-color: #3498db;
+    color: #fff;
+}
+.header-img{
+    text-align: right;
 }
