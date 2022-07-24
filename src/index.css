@@ -5,6 +5,9 @@
 body{
     background-color: #fcf2e5 !important;
 }
+*:focus{
+    box-shadow: none !important;
+}
 /* NavBar.jsx CSS */
 .navbar-brand{
     font-size: 1.9rem !important;
@@ -31,7 +34,7 @@ body{
 /* Home page CSS */
 #header{
     width: 100%;
-    height: 80vh;
+    min-height: 80vh;
     margin-top: 70px;
 }
 #header h1{
@@ -67,12 +70,38 @@ body{
 .header-img{
     text-align: right;
 }
+
 /* Menu Page CSS */
 .btn-view-item{
     background: #865B33 !important;
     color: #fff !important;
 }
 .btn-view-item:hover{
+    background: #fff !important;
+    color: #865B33 !important;
+    border: 1px solid #865B33 !important;
+}
+
+/* Contact Page CSS */
+.contact-header{
+    margin-top: 0px !important;
+}
+.contact-header input:focus,
+.contact-header textarea:focus{
+    border-color: #865B33;
+}
+.contact-header .input-icon{
+    height: 38px;
+    width: 40px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+}
+.contact-header #send-btn{
+    background: #865B33 !important;
+    border: 1px solid transparent !important;
+    color: #fff !important;
+}
+.contact-header #send-btn:hover{
     background: #fff !important;
     color: #865B33 !important;
     border: 1px solid #865B33 !important;
