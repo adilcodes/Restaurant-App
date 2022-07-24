@@ -1,6 +1,6 @@
 import React from 'react';
 import restaurant from "../images/restaurant.png"
-import Common from './Common';
+import Common from '../components/Common';
 
 export default function About() {
   return (

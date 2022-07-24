@@ -67,3 +67,13 @@ body{
 .header-img{
     text-align: right;
 }
+/* Menu Page CSS */
+.btn-view-item{
+    background: #865B33 !important;
+    color: #fff !important;
+}
+.btn-view-item:hover{
+    background: #fff !important;
+    color: #865B33 !important;
+    border: 1px solid #865B33 !important;
+}

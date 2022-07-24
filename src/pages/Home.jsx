@@ -1,6 +1,6 @@
 import React from 'react';
 import headerImg from "../images/home-header.png"
-import Common from './Common';
+import Common from '../components/Common';
 
 export default function Home() {
   return (
