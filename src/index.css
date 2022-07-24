@@ -81,6 +81,12 @@ body{
     color: #865B33 !important;
     border: 1px solid #865B33 !important;
 }
+.search-bar{
+    background-color: transparent !important;
+    border: none !important;
+    border-bottom: 1px solid #865B33 !important;
+    border-radius: 0px !important;
+}
 
 /* Contact Page CSS */
 .contact-header{
@@ -96,12 +102,12 @@ body{
     border: 1px solid #ced4da;
     border-radius: 6px;
 }
-.contact-header #send-btn{
+#send-btn{
     background: #865B33 !important;
     border: 1px solid transparent !important;
     color: #fff !important;
 }
-.contact-header #send-btn:hover{
+#send-btn:hover{
     background: #fff !important;
     color: #865B33 !important;
     border: 1px solid #865B33 !important;
