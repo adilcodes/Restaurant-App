@@ -7,7 +7,7 @@ export default function NavBar() {
     <>
       <div className="container-fluid">
         <div className="row">
-          <div className="col-10 mx-auto">
+          <div className="col-sm-10 col-12 mx-auto">
             <nav className="navbar navbar-expand-lg bg-transparent">
               <div className="container-fluid">
                 <Link className="navbar-brand d-flex align-items-center gap-3" to="/"><img src={logo} width="40" alt="ChillGrill" />ChillGrill</Link>
