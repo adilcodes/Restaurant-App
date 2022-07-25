@@ -1,4 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+::-webkit-scrollbar{
+    display: none !important;
+}
+html{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
 *{
     font-family: 'Mulish', sans-serif;
 }
@@ -34,7 +43,7 @@ body{
 /* Home page CSS */
 #header{
     width: 100%;
-    min-height: 75vh;
+    min-height: 74vh;
     margin-top: 70px;
 }
 #header h1{
@@ -67,9 +76,6 @@ body{
     background-color: #865B33;
     color: #fff;
 }
-.header-img{
-    text-align: right;
-}
 
 /* Menu Page CSS */
 .btn-view-item{
@@ -91,6 +97,7 @@ body{
 /* Contact Page CSS */
 .contact-header{
     margin-top: 0px !important;
+    min-height: 70.3vh !important;
 }
 .contact-header input:focus,
 .contact-header textarea:focus{
@@ -135,3 +142,40 @@ body{
 .colored-text:hover{
     color: #865B33 !important;
 }
+
+
+/* Responsiveness CSS */
+@media only screen and (max-width: 1230px){
+    #header{
+        min-height: 70vh;
+    }
+    .contact-header{
+        min-height: 65.3vh !important;
+    }
+}  
+
+@media only screen and (max-width: 425px){
+    #header{
+        min-height: 73vh;
+        margin-top: 40px;
+        margin-bottom: 10px;
+    }
+    .contact-header{
+        min-height: 65.3vh !important;
+    }
+}  
+@media only screen and (max-width: 375px){
+    #header h1{
+        font-size: 36px !important;
+    }
+    #header h2{
+        font-size: 18px !important;
+        line-height: 28px !important;
+    }
+    #header .btn-see-menu{
+        font-size: 14px !important;
+        padding: 10px 15px !important;
+        letter-spacing: 0.3px !important;
+    }
+}  
+

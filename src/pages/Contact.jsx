@@ -33,11 +33,11 @@ Message : ${data.message}.`
       <div id="header" className="d-flex align-items-start pt-md-4 pt-0 contact-header">
         <div className="container-fluid">
           <div className="row">
-            <div className="col-10 row mx-auto py-5 justify-content-center align-items-center">
+            <div className="col-12 col-sm-10 row mx-auto py-5 justify-content-center align-items-center">
               <div className="col-md-6 d-none d-md-block">
                 <img src={contactImg} alt="Contact Us" className="img-fluid" />
               </div>
-              <div className="col-md-6 pt-5 pt-lg-0">
+              <div className="col-md-6">
                 <form id="form" onSubmit={formSubmit}>
                   <p className="form-label">Email</p>
                   <div className="d-flex align-items-center gap-2">

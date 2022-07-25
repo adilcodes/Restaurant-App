@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function FoodCard(props) {
     return (
         <>
-            <div className="col-md-4 col-10 mx-auto">
+            <div className="col-md-4 col-sm-8 col-11 mx-auto">
                 <div className="card">
                     <img src={props.foodImg} className="card-img-top" alt="Food Item" />
                     <div className="card-body">
