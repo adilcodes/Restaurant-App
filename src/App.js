@@ -5,6 +5,8 @@ import Home from "../src/pages/Home";
 import Menu from "../src/pages/Menu";
 import About from "../src/pages/About";
 import Contact from "../src/pages/Contact";
+import Login from "../src/pages/Login";
+import SignUp from "../src/pages/SignUp";
 import NoPage from "../src/pages/NoPage";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
@@ -20,6 +22,8 @@ function App() {
             <Route path="menu" element={<Menu />} />
             <Route path="about" element={<About />} />
             <Route path="contact" element={<Contact />} />
+            <Route path="login" element={<Login />} />
+            <Route path="join" element={<SignUp />} />
             <Route path="*" element={<NoPage />} />
           </Route>
         </Routes>
