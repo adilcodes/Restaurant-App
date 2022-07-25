@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
 
-::-webkit-scrollbar{
+/* ::-webkit-scrollbar{
     display: none !important;
 }
 html{
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-}
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+} */
 
 *{
     font-family: 'Mulish', sans-serif;
@@ -17,6 +17,7 @@ body{
 *:focus{
     box-shadow: none !important;
 }
+
 /* NavBar.jsx CSS */
 .navbar-brand{
     font-size: 1.9rem !important;
@@ -24,7 +25,6 @@ body{
 }
 .navbar a{
     font-size: 1.3rem;
-    text-transform: capitalize;
 }
 .active{
     color: #865B33 !important;
@@ -32,6 +32,21 @@ body{
 }
 .navbar a:hover{
     color: #865B33 !important;
+}
+.cartIcon{
+    color: #404040;
+    background: #f5a525de;
+    width: 39px;
+    height: 39px;
+    font-size: 21px !important;
+    border: 1px solid transparent;
+    border-radius: 24%;
+    transition: 0.2s ease-in-out;
+}
+.cartIcon:hover{
+    color: #865B33;
+    background: transparent;
+    border: 1px solid #865B33;
 }
 
 @media only screen and (max-width: 991px) {
@@ -152,7 +167,7 @@ body{
     .contact-header{
         min-height: 65.3vh !important;
     }
-}  
+}
 
 @media only screen and (max-width: 425px){
     #header{
@@ -163,7 +178,8 @@ body{
     .contact-header{
         min-height: 65.3vh !important;
     }
-}  
+}
+
 @media only screen and (max-width: 375px){
     #header h1{
         font-size: 36px !important;

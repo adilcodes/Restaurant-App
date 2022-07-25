@@ -15,7 +15,8 @@ export default function NavBar() {
                   <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul className="navbar-nav ms-auto mb-2 mb-lg-0 gap-1">
+                  {/* Main Navigation Menu */}
+                  <ul className="navbar-nav mx-auto mb-2 mb-lg-0 gap-1">
                     <li className="nav-item">
                       <NavLink className="nav-link" to="/">Home</NavLink>
                     </li>
@@ -27,6 +28,22 @@ export default function NavBar() {
                     </li>
                     <li className="nav-item">
                       <NavLink className="nav-link" to="/contact">Contact</NavLink>
+                    </li>
+                  </ul>
+                  {/* Right Navigation options */}
+                  <ul className="navbar-nav align-items-start align-items-lg-center mb-2 mb-lg-0 gap-1">
+                    <li className="nav-item">
+                      <NavLink className="nav-link" to="/login">Sign in</NavLink>
+                    </li>
+                    <li className="nav-item">
+                      <NavLink className="nav-link" to="/join">Sign up</NavLink>
+                    </li>
+                    <li className="nav-item">
+                      <NavLink className="nav-link" to="/cart">
+                        <div className="cartIcon d-flex justify-content-center align-items-center">
+                          <i className="fa-solid fa-basket-shopping"></i>
+                        </div>
+                      </NavLink>
                     </li>
                   </ul>
                 </div>
