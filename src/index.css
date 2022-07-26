@@ -135,6 +135,11 @@ body{
     border: 1px solid #865B33 !important;
 }
 
+/* Login Page CSS */
+#auth-form .auth-field{
+    border: 1px solid #865B33;
+}
+
 /* Footer CSS */
 .footer-sm-icon{
     height: 2rem !important;
@@ -185,8 +190,11 @@ body{
         font-size: 36px !important;
     }
     #header h2{
-        font-size: 18px !important;
+        font-size: 18px;
         line-height: 28px !important;
+    }
+    .login-header h2{
+        font-size: 21px !important;
     }
     #header .btn-see-menu{
         font-size: 14px !important;
