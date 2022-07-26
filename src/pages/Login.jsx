@@ -1,7 +1,12 @@
 import React from "react";
-import logo from "../images/logo.jpg"
+import logo from "../images/logo.jpg";
 
 export default function Login() {
+
+  const formSubmit = (event) => {
+    event.preventDefault();
+  };
+
   return (
     <>
       <div id="header" className="d-flex align-items-center login-header">
@@ -13,7 +18,7 @@ export default function Login() {
                 <h2 className="text-center">Seems like you're hungry 🤤 </h2>
               </div>
               <div className="col-md-7 col-lg-4 col-10">
-                <form id="auth-form">
+                <form id="auth-form" onSubmit={formSubmit}>
                   <div className="mb-3">
                     <label for="exampleInputEmail1" className="form-label">Email address</label>
                     <input type="email" className="form-control bg-transparent auth-field" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Email Here" />
