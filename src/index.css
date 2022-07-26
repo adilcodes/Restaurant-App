@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
 
-/* ::-webkit-scrollbar{
+::-webkit-scrollbar{
     display: none !important;
 }
 html{
     -ms-overflow-style: none;
     scrollbar-width: none;
-} */
+}
 
 *{
     font-family: 'Mulish', sans-serif;
