@@ -2,7 +2,9 @@ import React from "react";
 import FoodCard from "../components/FoodCard";
 import DummyData from "../components/DummyData";
 
+
 export default function Menu() {
+
   return (
     <>
       <div className="mt-5 col-10 mx-auto d-flex flex-column justify-content-center align-items-center">
@@ -17,12 +19,11 @@ export default function Menu() {
       <div className="container-fluid mb-5">
         <div className="row">
           <div className="col-10 row gy-4 mx-auto">
-            {DummyData.map((foodItem, index) => {
+            {DummyData.map((foodItem) => {
               return(
-                <FoodCard key={index}
-                  foodImg={foodItem.foodImg}
-                  foodTitle={foodItem.foodTitle}
-                  foodText={foodItem.foodText}
+                <FoodCard
+                key={foodItem.foodId}
+                foodItem = {foodItem}      
                 />
               )
             })}
