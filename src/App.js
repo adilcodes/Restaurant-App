@@ -7,6 +7,7 @@ import About from "../src/pages/About";
 import Contact from "../src/pages/Contact";
 import Login from "../src/pages/Login";
 import SignUp from "../src/pages/SignUp";
+import Cart from "../src/pages/Cart";
 import NoPage from "../src/pages/NoPage";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
@@ -24,6 +25,7 @@ function App() {
             <Route path="contact" element={<Contact />} />
             <Route path="login" element={<Login />} />
             <Route path="join" element={<SignUp />} />
+            <Route path="cart" element={<Cart />} />
             <Route path="*" element={<NoPage />} />
           </Route>
         </Routes>

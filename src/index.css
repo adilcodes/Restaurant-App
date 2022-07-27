@@ -140,6 +140,18 @@ body{
     border: 1px solid #865B33;
 }
 
+/* Cart Item CSS */
+.cart-item{
+    background: #f5a525de;
+}
+.cart-item .cart-item-img img{
+    width: 58%;
+    border-radius: 12px;
+}
+.cart-item-quantity input{
+    outline: none !important;
+}
+
 /* Footer CSS */
 .footer-sm-icon{
     height: 2rem !important;
