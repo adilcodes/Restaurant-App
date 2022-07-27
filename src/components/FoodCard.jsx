@@ -10,7 +10,7 @@ export default function FoodCard(props) {
                     <div className="card-body">
                         <h5 className="card-title">{props.foodTitle}</h5>
                         <p className="card-text">{props.foodText}</p>
-                        <Link to="/menu" className="btn btn-view-item">View Item</Link>
+                        <Link to="/menu" className="btn btn-view-item">Add To Cart</Link>
                     </div>
                 </div>
             </div>
