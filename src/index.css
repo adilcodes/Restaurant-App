@@ -188,6 +188,13 @@ body{
     .contact-header{
         min-height: 65.3vh !important;
     }
+    #cartPage-heading{
+        margin-top: 0.7rem !important;
+    }
+    #cart-items-container-id{
+        height: 53vh;
+        margin-top: 0.3rem !important;
+    }
 }
 
 @media only screen and (max-width: 425px){
@@ -198,6 +205,14 @@ body{
     }
     .contact-header{
         min-height: 65.3vh !important;
+    }
+    #cart-price-section{
+        align-items: center !important;
+        margin-top: 1rem !important;
+        margin-bottom: 1.1rem !important;
+    }
+    #cart-price-section button{
+        width: 100% !important;
     }
 }
 
