@@ -1,11 +1,18 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { CartItemsContext } from "../contextApi/CartContext";
 
 export default function CartItem({ props }) {
 
     const { cart, setCart } = useContext(CartItemsContext);
-    const [quantity, setQuantity] = useState(1);
-    
+
+    const [quantity, setQuantity] = useState(props.foodQuantity);
+
+    useEffect(() => {
+        setCart(cart.filter((cartItem) => {
+            return cartItem.foodId === props.foodId ? cartItem.foodQuantity = quantity : cartItem.foodQuantity;
+        }));  
+    }, [quantity])
+
 
     return (
         <>
@@ -19,25 +26,27 @@ export default function CartItem({ props }) {
                 </div>
                 <div className="col-md-3 cart-item-quantity d-flex justify-content-center align-items-center gap-2">
                     <button
-                    className="btn border-0 bg-white rounded-0 py-0 px-2 text-center"
-                    onClick={() => {
-                        quantity > 0 ? setQuantity(quantity-1) : setQuantity(0);
-                    }}
+                        className="btn border-0 bg-white rounded-0 py-0 px-2 text-center"
+                        onClick={() => {
+                            return quantity > 0 ? setQuantity(quantity - 1) : quantity;
+                        }}
                     >
                         <i className="fa-solid fa-minus"></i>
                     </button>
-                    <input type="text" className="col-3 rounded-1 border-0 text-center" value={quantity} />
+                    <input
+                        type="text"
+                        className="col-3 rounded-1 border-0 text-center"
+                        value={props.foodQuantity}
+                    />
                     <button
-                    className="btn border-0 bg-white rounded-0 py-0 px-2 text-center"
-                    onClick={() => {
-                        setQuantity(quantity+1);
-                    }}
+                        className="btn border-0 bg-white rounded-0 py-0 px-2 text-center"
+                        onClick={() => {setQuantity(quantity + 1)}}
                     >
                         <i className="fa-solid fa-plus"></i>
                     </button>
                 </div>
                 <div className="col-md-2 text-center cart-item-price">
-                    <h5 className="m-0">{quantity * props.foodPrice} Rs</h5>
+                    <h5 className="m-0">{props.foodQuantity * props.foodPrice} Rs</h5>
                 </div>
                 <div className="col-md-1 text-center cart-item-delete">
                     <button

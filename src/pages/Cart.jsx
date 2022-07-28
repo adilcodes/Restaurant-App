@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import CartItem from "../components/CartItem";
 import { Scrollbars } from 'react-custom-scrollbars-2';
 import { CartItemsContext } from "../contextApi/CartContext";
@@ -7,9 +7,15 @@ export default function Cart() {
 
     const { cart } = useContext(CartItemsContext);
     console.log(cart);
-    let totalPrice = cart.reduce((accumulator ,cartItem) => {
-        return accumulator + cartItem.foodPrice;
-    }, 0)
+    const [total, setTotal] = useState();
+
+    useEffect(() => {
+        setTotal (
+            cart.reduce((accumulator, cartItem) => {
+                return accumulator + (cartItem.foodPrice * cartItem.foodQuantity);
+            }, 0)
+        )
+    }, [cart]);
 
     return (
         <>
@@ -35,7 +41,7 @@ export default function Cart() {
                 </div>
                 <div className="row">
                     <div className="col-10 mt-4 mx-auto d-flex flex-column align-items-end">
-                        <h4 className="mb-3"><span className="m-0 p-0 fw-semibold">Cart Total : </span>{totalPrice} Rs</h4>
+                        <h4 className="mb-3"><span className="m-0 p-0 fw-semibold">Cart Total : </span>{total} Rs</h4>
                         <button className="btn btn-view-item border-1 rounded-0 fs-5 px-4">Checkout</button>
                     </div>
                 </div>

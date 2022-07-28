@@ -13,7 +13,7 @@ export default function FoodCard({ foodItem }) {
                     <div className="card-body">
                         <h5 className="card-title">{foodItem.foodTitle}</h5>
                         <p className="card-text">{foodItem.foodText}</p>
-                        {cart.includes(foodItem) ? (
+                        {cart.some((item) => item.foodId === foodItem.foodId) ? (
                             <button
                                 className="btn btn-view-item"
                                 onClick={() => {
@@ -26,7 +26,7 @@ export default function FoodCard({ foodItem }) {
                             <button
                                 className="btn btn-view-item"
                                 onClick={() => {
-                                    setCart([...cart, foodItem]);
+                                    setCart([...cart, {...foodItem, foodQuantity : 1}]);
                                 }}
                             >Add To Cart</button>
                         )}
