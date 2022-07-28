@@ -16,15 +16,15 @@ export default function CartItem({ props }) {
 
     return (
         <>
-            <div className="col-md-11 mx-auto mb-4 p-2 cart-item rounded-3 d-flex justify-content-center align-items-center">
-                <div className="col-md-3 text-center cart-item-img">
+            <div className="col-md-11 mx-auto mb-4 p-2 cart-item rounded-3 d-flex flex-wrap justify-content-center align-items-center" id="cart-item-id">
+                <div className="col-md-3 col-sm-3 col-6 text-center cart-item-img">
                     <img src={props.foodImg} alt={props.foodTitle} />
                 </div>
-                <div className="col-md-3 cart-item-title">
+                <div className="col-md-3 col-sm-3 col-6 cart-item-title">
                     <h4 className="m-0">{props.foodTitle}</h4>
                     <p className="m-0">{props.foodText.substring(0, 23)}...</p>
                 </div>
-                <div className="col-md-3 cart-item-quantity d-flex justify-content-center align-items-center gap-2">
+                <div className="col-md-3 col-sm-3 col-6 mt-sm-0 mt-3 cart-item-quantity d-flex justify-content-center align-items-center gap-2">
                     <button
                         className="btn border-0 bg-white rounded-0 py-0 px-2 text-center"
                         onClick={() => {
@@ -45,10 +45,10 @@ export default function CartItem({ props }) {
                         <i className="fa-solid fa-plus"></i>
                     </button>
                 </div>
-                <div className="col-md-2 text-center cart-item-price">
+                <div className="col-md-2 col-sm-2 col-3 mt-sm-0 mt-3 text-center cart-item-price">
                     <h5 className="m-0">{props.foodQuantity * props.foodPrice} Rs</h5>
                 </div>
-                <div className="col-md-1 text-center cart-item-delete">
+                <div className="col-md-1 col-sm-1 col-3 mt-sm-0 mt-3 text-center cart-item-delete">
                     <button
                         className="btn border-0"
                         onClick={() => {

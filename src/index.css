@@ -197,6 +197,12 @@ body{
     }
 }
 
+@media only screen and (max-width: 890px){
+    .cart-item .cart-item-img img{
+        width: 71%;
+    }
+}
+
 @media only screen and (max-width: 425px){
     #header{
         min-height: 73vh;
@@ -233,4 +239,19 @@ body{
         letter-spacing: 0.3px !important;
     }
 }  
-
+@media only screen and (max-width: 370px){
+    #cart-item-id{
+        flex-direction: column !important;
+        gap: 13px !important;
+    }
+    #cart-item-id div{
+        width: 100% !important;
+        text-align: center !important;
+        margin-top: 0 !important;
+    }
+    #cart-item-id .cart-item-delete{
+        position: relative;
+        background-color: #fff !important;
+        border-radius: 9px;
+    }
+}
