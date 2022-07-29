@@ -10,5 +10,5 @@ Cart system is also fully dynamic and changes the items and their prices in real
 
 A minimal looking 404 page has been also designed and set up for the broken and undefined URLs.
 
-Happy Coding😊
+Happy Coding😊 <br />
 Adil!
